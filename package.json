@@ -4,7 +4,7 @@
   "description": "Universal router that delegates to Koa Router and Page.js",
   "main": "index.js",
   "scripts": {
-    "test": "standard && mocha",
+    "test": "mocha -r should && standard",
     "bundle": "browserify -t babelify example/client.js > example/bundle.js",
     "example": "npm run bundle && node -r babel-core/register ./example/server.js"
   },
@@ -49,6 +49,7 @@
     "koa": "^2.0.0",
     "koa-static": "^3.0.0",
     "mocha": "^3.0.0",
+    "should": "^10.0.0",
     "standard": "^7.1.2",
     "superagent": "^2.1.0"
   },
