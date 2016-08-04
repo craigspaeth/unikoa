@@ -47,6 +47,10 @@ router.get('/article/:id', async (ctx) => {
 router.routes()
 ````
 
+## Contributing
+
+Please fork the project and submit a pull request with tests. Install node modules `npm install` and run tests with `npm test`.
+
 ## License
 
 MIT
